@@ -176,6 +176,7 @@ body {
 
 .about .row {
     display: flex;
+    align-items: center;
 }
 
 .about .row .about-img {
@@ -183,8 +184,7 @@ body {
 }
 
 .about .row .about-img img {
-    width: 20%;
-    border: 2px solid black;
+    width: 100%;
 }
 
 .about .row .content {
