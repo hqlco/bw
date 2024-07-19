@@ -89,22 +89,14 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-image: url("../img/header-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
+    text-align: center;
 }
-
-/* .hero::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 30%;
-  bottom: 0;
-  background: linear-gradient(0deg, var(--bg) 8%, rgba(255, 98, 0, 0) 50%);
-} */
 
 .hero .content {
     padding: 1.4rem 7%;
@@ -112,7 +104,7 @@ body {
 }
 
 .hero .content h1 {
-    font-size: 5em;
+    font-size: 3rem;
     font-weight: bold;
     color: var(--primary);
     text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
@@ -138,8 +130,8 @@ body {
 }
 
 .hero .content .cta {
-    margin-top: 47rem;
-    margin-left: 73rem;
+    margin-top: 50rem;
+    margin-left: 40rem;
     display: inline-block;
     padding: 1rem 3rem;
     font-size: 1.4rem;
@@ -153,6 +145,10 @@ body {
 .hero .content .cta:hover {
     transition: 0.3s;
     transform: scale(1.1);
+}
+
+.hero-phone {
+    display: none;
 }
 
 /* About Section */
@@ -177,10 +173,12 @@ body {
 .about .row {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .about .row .about-img {
     flex: 1 1 35rem;
+    margin-bottom: 2rem;
 }
 
 .about .row .about-img img {
@@ -263,7 +261,7 @@ body {
 
     .about .row .about-img img {
         height: 24rem;
-        object-fit: cover;
+        object-fit: scale-down;
         object-position: center;
     }
 
@@ -279,11 +277,81 @@ body {
     .about .row .content p {
         font-size: 1.6rem;
     }
+
+    .hero .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .content p {
+        font-size: 1.4rem;
+    }
+
+    .hero .content .cta {
+        display: none;
+    }
+
+    .hero-phone .content .cta {
+        margin-top: 50rem;
+        display: inline-block;
+        padding: 1rem 3rem;
+        font-size: 1.4rem;
+        color: black;
+        text-decoration: none;
+        background-color: var(--secondary);
+        border-radius: 0.5rem;
+        box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    }
+
+    .hero-phone .content .cta:hover {
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+
+    /* Hero Section */
+    .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("../img/header-bg-phone-1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        text-align: center;
+    }
+
+    .hero-phone {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("../img/header-bg-phone-2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        text-align: center;
+    }
 }
 
 /* Mobile Phone */
 @media (max-width: 450px) {
     html {
         font-size: 55%;
+    }
+
+    .hero .content h1 {
+        font-size: 2rem;
+    }
+
+    .hero .content p {
+        font-size: 1.2rem;
+    }
+
+    .hero .content .cta {
+        margin-top: 1rem;
+        padding: 0.8rem 2.5rem;
+        font-size: 1.2rem;
     }
 }
