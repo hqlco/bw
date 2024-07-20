@@ -203,6 +203,12 @@ body {
     line-height: 1.6;
 }
 
+video {
+    display: block;
+    width: 1280px;
+    margin: auto;
+}
+
 /* Contact Section */
 .contact h2 {
     margin-bottom: 1rem;
@@ -334,6 +340,12 @@ body {
         background-position: center;
         position: relative;
         text-align: center;
+    }
+
+    video {
+        display: block;
+        width: 320px;
+        margin: auto;
     }
 }
 
